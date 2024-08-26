@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:twitter_clone/pages/home_page.dart';
 import 'package:twitter_clone/pages/login_page.dart';
+import 'package:twitter_clone/pages/register_page.dart';
 import 'package:twitter_clone/themes/theme_provider.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: RegisterPage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
